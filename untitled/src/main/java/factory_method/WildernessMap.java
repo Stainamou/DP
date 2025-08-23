@@ -8,6 +8,7 @@ public class WildernessMap extends Map {
         super(rows, cols);
     }
 
+    @Override
     public Tile createTile() {
         int type = rand.nextInt(3);
         return switch (type) {
