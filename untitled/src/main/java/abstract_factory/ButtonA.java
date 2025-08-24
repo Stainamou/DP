@@ -9,6 +9,6 @@ public class ButtonA extends Button {
 
     @Override
     public void display() {
-        System.out.println("Displaying Button in style A");
+        System.out.println("+[" + text + "]+");
     }
 }

@@ -9,6 +9,6 @@ public class TextFieldA extends TextField {
 
     @Override
     public void display() {
-        System.out.println("Displaying TextField in style A");
+        System.out.println("| " + text + " |");
     }
 }

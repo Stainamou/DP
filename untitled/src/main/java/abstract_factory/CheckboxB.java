@@ -9,6 +9,6 @@ public class CheckboxB extends Checkbox {
 
     @Override
     public void display() {
-        System.out.println("Displaying Checkbox in style B");
+        System.out.println("(X) " + text);
     }
 }
