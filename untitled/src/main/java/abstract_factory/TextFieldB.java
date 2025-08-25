@@ -1,14 +1,12 @@
 package abstract_factory;
 
 public class TextFieldB extends TextField {
-    private String text;
-
     public TextFieldB(String text) {
-        this.text = text;
+        super(text);
     }
 
     @Override
     public void display() {
-        System.out.println("{" + text + "}");
+        System.out.println("{ " + text + " }");
     }
 }

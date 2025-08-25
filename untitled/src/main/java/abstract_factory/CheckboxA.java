@@ -1,10 +1,8 @@
 package abstract_factory;
 
 public class CheckboxA extends Checkbox{
-    private String text;
-
     public CheckboxA(String text) {
-        this.text = text;
+        super(text);
     }
 
     @Override

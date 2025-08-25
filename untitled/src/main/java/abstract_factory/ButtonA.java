@@ -1,10 +1,8 @@
 package abstract_factory;
 
 public class ButtonA extends Button {
-    private String text;
-
     public ButtonA(String text) {
-        this.text = text;
+        super(text);
     }
 
     @Override
