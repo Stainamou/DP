@@ -28,4 +28,15 @@ public class Department extends Organization {
         }
         return totalSalary;
     }
+
+    @Override
+    public String toXml() {
+        StringBuilder xml = new StringBuilder();
+        xml.append("<department name=\"").append(name).append("\">");
+        for (Organization component : components) {
+            xml.append(component.toXml());
+        }
+        xml.append("</department>");
+        return xml.toString();
+    }
 }

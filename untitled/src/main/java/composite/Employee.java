@@ -23,4 +23,9 @@ public class Employee extends Organization {
     public double getSalary() {
         return salary;
     }
+
+    @Override
+    public String toXml() {
+        return "<employee name=\"" + name + "\" salary=\"" + salary + "\"/>";
+    }
 }
