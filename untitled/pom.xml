@@ -43,6 +43,11 @@
             <artifactId>json-simple</artifactId>
             <version>1.1.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>21.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -62,6 +67,19 @@
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>flyweight.Game</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>command.PixelArtEditorApp</mainClass>
+                    <commandlineArgs></commandlineArgs>
+                    <arguments>
+                        <argument>--module-path</argument>
+                        <argument>$</argument>
+                    </arguments>
                 </configuration>
             </plugin>
         </plugins>
